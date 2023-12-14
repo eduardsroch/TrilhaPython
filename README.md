@@ -3,11 +3,15 @@
   
   <h3 align="center">🚧Projeto em Construção...🚧</h3>
 
- <p style="text-align: justify;">Bem-vindos à Soulpy, onde a arte do desenvolvimento em Python se encontra com a inovação digital, Como entusiastas da programação, decidimos transformar nossa paixão em uma missão. Nossa jornada é dedicada a desvendar os segredos da modularidade em Python e oferecer soluções com objetivo de alcançar novos patamares de eficiência e elegância no código.</p>
+ <h5 align="justify">Bem-vindos à Soulpy, onde a arte do desenvolvimento em Python se encontra com a inovação digital, Como entusiastas da programação, decidimos transformar nossa paixão em uma missão. Nossa jornada é dedicada a desvendar os segredos da modularidade em Python e oferecer soluções com objetivo de alcançar novos patamares de eficiência e elegância no código.</h5>
 
 **Funcionalidades do projeto**
 
 - [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
+
+ **indice**
+
+ - datafruta
 
  **Tecnologias ultilizadas**
 
