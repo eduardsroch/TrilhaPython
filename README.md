@@ -8,7 +8,16 @@
 **<span style="font-size:25;">Funcionalidades do projeto</span>**
 
 - [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
-2.
-3.
-4.
-5.
+- [ ] 
+- [ ] 
+- [ ]
+
+ **<span style="font-size:25;">Tecnologias ultilizadas</span>**
+
+ 1. 
+ 2. 
+ 3. 
+ 4. 
+ 5. 
+
+  **<span style="font-size:25;">Autores</span>**
