@@ -5,7 +5,7 @@
 
  <p style="text-align: justify;">Bem-vindos à Soulpy, onde a arte do desenvolvimento em Python se encontra com a inovação digital, Como entusiastas da programação, decidimos transformar nossa paixão em uma missão. Nossa jornada é dedicada a desvendar os segredos da modularidade em Python e oferecer soluções com objetivo de alcançar novos patamares de eficiência e elegância no código.</p>
 
-**<span style="font-size:25;">Funcionalidades do projeto</span>**
+**Funcionalidades do projeto**
 
 - [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
 
