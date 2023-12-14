@@ -11,7 +11,8 @@
 
  **indice**
 
- - <a href="./DataFruta/Funçao.md">datafruta</a>
+ - <a href="./DataFruta/Funçao.md">Datafruta</a>
+  - <a href="./Relatorios/">Relatorios</a>
 
  **Tecnologias ultilizadas**
 
