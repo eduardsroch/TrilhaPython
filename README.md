@@ -7,7 +7,7 @@
 
 **<span style="font-size:25;">Funcionalidades do projeto</span>**
 
-1. Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
+- [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
 2.
 3.
 4.
