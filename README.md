@@ -11,10 +11,10 @@
 
  **Tecnologias ultilizadas**
 
- 1. 
- 2. 
- 3. 
- 4. 
- 5. 
+ 1. Vscod
+ 2. jupyter notebooks
 
   **Autores**
+
+  | [<img src="https://avatars.githubusercontent.com/u/147214226?v=4" width=115><br><sub>Thiago Leite</sub>](https://github.com/Leitetc) |  [<img src="https://avatars.githubusercontent.com/u/133709733?v=4" width=115><br><sub>Eduardo Rocha </sub>](https://github.com/eduardsroch) |  [<img src="https://avatars.githubusercontent.com/u/144444085?v=4" width=115><br><sub>Nairan Santos</sub>](https://github.com/nairansantos) | [<img src="https://avatars.githubusercontent.com/u/146987217?v=4" width=115><br><sub>Arthur Gobira</sub>](https://github.com/GobiraArthur) | [<img src="https://avatars.githubusercontent.com/u/148831994?v=4" width=115><br><sub>Ricardo .......... </sub>](https://github.com/RicardTIc) |
+| :---: | :---: | :---: | :---: |:---: |
