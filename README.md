@@ -25,10 +25,10 @@
 | :---: | :---: | :---: | :---: |:---: |
 
 **Contatos**
-| Nome            | E-mail                  |
-|-----------------|-------------------------|
-| Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |
-| Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| 
+| Nome            | E-mail                  |Fork|Branch|
+|-----------------|-------------------------|----|------|
+| Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |[Thiago](https://github.com/Leitetc/TrilhaPython.git)|[ThiagoLeite](https://github.com/eduardsroch/TrilhaPython/tree/ThiagoLeite)  
+| Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| [Eduardo](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)|[LuisRocha](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)  
 | Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) |
 | Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| 
 | Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) |
