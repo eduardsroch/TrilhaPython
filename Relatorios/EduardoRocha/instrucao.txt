@@ -1,0 +1,2 @@
+ Criando um Ambiente Virtual no Conda e Instalando Pacotes
+
