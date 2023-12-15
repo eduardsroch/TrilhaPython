@@ -23,3 +23,12 @@
 
   | [<img src="https://avatars.githubusercontent.com/u/147214226?v=4" width=115><br><sub>Thiago Leite</sub>](https://github.com/Leitetc) |  [<img src="https://avatars.githubusercontent.com/u/133709733?v=4" width=115><br><sub>Eduardo Rocha </sub>](https://github.com/eduardsroch) |  [<img src="https://avatars.githubusercontent.com/u/144444085?v=4" width=115><br><sub>Nairan Santos</sub>](https://github.com/nairansantos) | [<img src="https://avatars.githubusercontent.com/u/146987217?v=4" width=115><br><sub>Arthur Gobira</sub>](https://github.com/GobiraArthur) | [<img src="https://avatars.githubusercontent.com/u/148831994?v=4" width=115><br><sub>Ricardo .......... </sub>](https://github.com/RicardTIc) |
 | :---: | :---: | :---: | :---: |:---: |
+
+**Contatos**
+| Nome            | E-mail                  |
+|-----------------|-------------------------|
+| Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |
+| Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| 
+| Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) |
+| Arthur Gobira   | [](mailto:)| 
+| Ricardo    | [](mailto:) |
