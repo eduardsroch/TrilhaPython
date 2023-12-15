@@ -1,4 +1,4 @@
- Criando um Ambiente Virtual no Conda e Instalando Pacotes
+## Criando um Ambiente Virtual no Conda e Instalando Pacotes
 
 Ambientes virtuais são uma prática essencial no desenvolvimento Python para isolar dependências de diferentes projetos. O Conda é uma ferramenta poderosa que facilita a criação e gestão desses ambientes. Este guia fornecerá instruções passo a passo para criar um ambiente virtual usando o Conda e instalar pacotes.
 
@@ -12,29 +12,28 @@ Abra o terminal (Linux/Mac) ou o prompt de comando (Windows). Certifique-se de e
 Para criar um ambiente virtual, use o seguinte comando:
 
 
-conda create --name meu_ambiente python=3.8
+>conda create --name meu_ambiente python=3.8
 Substitua meu_ambiente pelo nome desejado para o seu ambiente e python=3.8 pela versão do Python que você deseja usar.
 
 4. Ativando o Ambiente Virtual
 Para ativar o ambiente virtual, utilize o seguinte comando:
 
-No Linux/Mac:
-conda activate meu_ambiente
+`No Linux/Mac`:
+>conda activate meu_ambiente
 
-No Windows:
+`No Windows:`
 conda activate meu_ambiente
-5. Instalando Pacotes
+1. Instalando Pacotes
 Com o ambiente virtual ativo, você pode instalar pacotes usando o comando conda install. Por exemplo, para instalar o pacote numpy, use:
 
-conda install numpy
+>conda install numpy
 Se preferir, você também pode usar o pip dentro do ambiente virtual:
 
-
-pip install numpy
+>pip install numpy
 6. Desativando o Ambiente Virtual
 Quando terminar de trabalhar no ambiente virtual, você pode desativá-lo com o comando:
 
-conda deactivate
+>conda deactivate
 
 Conclusão
 Agora você tem um ambiente virtual no Conda pronto para ser usado. Lembre-se de ativar o ambiente sempre que precisar trabalhar no projeto e desativá-lo quando terminar. Utilize esses passos como base para criar ambientes virtuais personalizados para cada projeto Python.
