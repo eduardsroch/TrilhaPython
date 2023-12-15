@@ -7,7 +7,7 @@
 
 **Funcionalidades do projeto**
 
-- [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
+- [x] Preparar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
 
  **indice**
 
