@@ -30,5 +30,5 @@
 | Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |
 | Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| 
 | Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) |
-| Arthur Gobira   | [](mailto:)| 
+| Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| 
 | Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) |
