@@ -7,7 +7,7 @@
 
 **Funcionalidades do projeto**
 
-- [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
+- [x] Preparar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
 
  **indice**
 
@@ -21,5 +21,14 @@
 
   **Autores**
 
-  | [<img src="https://avatars.githubusercontent.com/u/147214226?v=4" width=115><br><sub>Thiago Leite</sub>](https://github.com/Leitetc) |  [<img src="https://avatars.githubusercontent.com/u/133709733?v=4" width=115><br><sub>Eduardo Rocha </sub>](https://github.com/eduardsroch) |  [<img src="https://avatars.githubusercontent.com/u/144444085?v=4" width=115><br><sub>Nairan Santos</sub>](https://github.com/nairansantos) | [<img src="https://avatars.githubusercontent.com/u/146987217?v=4" width=115><br><sub>Arthur Gobira</sub>](https://github.com/GobiraArthur) | [<img src="https://avatars.githubusercontent.com/u/148831994?v=4" width=115><br><sub>Ricardo .......... </sub>](https://github.com/RicardTIc) |
+  | [<img src="https://avatars.githubusercontent.com/u/147214226?v=4" width=115><br><sub>Thiago Leite</sub>](https://github.com/Leitetc) |  [<img src="https://avatars.githubusercontent.com/u/133709733?v=4" width=115><br><sub>Eduardo Rocha </sub>](https://github.com/eduardsroch) |  [<img src="https://avatars.githubusercontent.com/u/144444085?v=4" width=115><br><sub>Nairan Santos</sub>](https://github.com/nairansantos) | [<img src="https://avatars.githubusercontent.com/u/146987217?v=4" width=115><br><sub>Arthur Gobira</sub>](https://github.com/GobiraArthur) | [<img src="https://avatars.githubusercontent.com/u/148831994?v=4" width=115><br><sub>Ricardo dos Santos </sub>](https://github.com/RicardTIc) |
 | :---: | :---: | :---: | :---: |:---: |
+
+**Contatos**
+| Nome            | E-mail                  |Fork|Branch|
+|-----------------|-------------------------|----|------|
+| Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |[Thiago](https://github.com/Leitetc/TrilhaPython.git)|[ThiagoLeite](https://github.com/eduardsroch/TrilhaPython/tree/ThiagoLeite)  
+| Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| [Eduardo](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)|[LuisRocha](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)  
+| Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) | [Nairan](https://github.com/nairansantos/TrilhaPython)|[Nairan](https://github.com/eduardsroch/TrilhaPython/tree/nairan)  
+| Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| 
+| Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) |
