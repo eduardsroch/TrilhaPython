@@ -6,7 +6,7 @@ O programa oferece funcionalidades como `adição de elementos` às listas, `ord
 
 Além disso, o código propõe a criação de um aplicativo interativo com um menu de opções, permitindo ao usuário escolher entre várias operações para interagir com os dados de forma dinâmica.
 
-<a href="./P001/">P001</a>
+<a href="./P001/">Primeira etapa</a>
 
 # P002 Avaliação de Desempenho para Manipulação de Dados
 
@@ -14,10 +14,10 @@ O código proposto envolve a implementação e avaliação do desempenho de clas
 
 **Parte 1:** Avaliação do desempenho das listas
 
-Neste exercício, são implementadas funções para gerar objetos das classes `ListaIdade` e `ListaSalario` com dados aleatórios. O desempenho das classes é testado com 5000 itens, medindo o tempo de execução dos métodos `mostraMediana`, `mostraMenor` e `mostraMaior`.
+São implementadas funções para gerar objetos das classes `ListaIdade` e `ListaSalario` com dados aleatórios. O desempenho das classes é testado com 5000 itens, medindo o tempo de execução dos métodos `mostraMediana`, `mostraMenor` e `mostraMaior`.
 
 **iParte 2:** Utilização do NumPy
 
-é explorado o pacote `NumPy` para gerar ndarrays com valores aleatórios (`inteiros` e `ponto flutuante`) em intervalos específicos. São criados ndarrays a partir das listas geradas no exercício anterior utilizando as funcionalidades do `NumPy`. Além disso, são pesquisados recursos do `NumPy` para calcular a `mediana`, o valor `mínimo` e `máximo` de um ndarray. O desempenho dessas operações é comparado com os métodos utilizados no exercício anterior.
+É explorado o pacote `NumPy` para gerar ndarrays com valores aleatórios (`inteiros` e `ponto flutuante`) em intervalos específicos. São criados ndarrays a partir das listas geradas no exercício anterior utilizando as funcionalidades do `NumPy`. Além disso, são pesquisados recursos do `NumPy` para calcular a `mediana`, o valor `mínimo` e `máximo` de um ndarray. O desempenho dessas operações é comparado com os métodos utilizados no exercício anterior.
 
-<a href="./P002/">P002</a>
+<a href="./P002/">Segunda etapa</a>

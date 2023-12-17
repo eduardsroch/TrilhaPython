@@ -12,13 +12,14 @@
 
  **indice**
 
- - <a href="./DataFruta/DescriçaodasAtividades.md">Descrição</a>
+ - <a href="./DataFruta/DescriçaodasAtividades.md">Descrição do projeto</a>
   - <a href="./Relatorios/">Relatorios</a>
 
  **Tecnologias ultilizadas**
 
  1. Vscod
  2. jupyter notebooks
+ 3. conda
 
   **Autores**
 
