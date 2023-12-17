@@ -16,7 +16,7 @@ O código proposto envolve a implementação e avaliação do desempenho de clas
 
 São implementadas funções para gerar objetos das classes `ListaIdade` e `ListaSalario` com dados aleatórios. O desempenho das classes é testado com 5000 itens, medindo o tempo de execução dos métodos `mostraMediana`, `mostraMenor` e `mostraMaior`.
 
-**iParte 2:** Utilização do NumPy
+**Parte 2:** Utilização do NumPy
 
 É explorado o pacote `NumPy` para gerar ndarrays com valores aleatórios (`inteiros` e `ponto flutuante`) em intervalos específicos. São criados ndarrays a partir das listas geradas no exercício anterior utilizando as funcionalidades do `NumPy`. Além disso, são pesquisados recursos do `NumPy` para calcular a `mediana`, o valor `mínimo` e `máximo` de um ndarray. O desempenho dessas operações é comparado com os métodos utilizados no exercício anterior.
 
