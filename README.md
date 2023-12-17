@@ -8,6 +8,7 @@
 **Funcionalidades do projeto**
 
 - [x] Preparar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
+- [x] Avaliar as limitações dos tipos de dados básicos em Python, apresentando os ndarrays do NumPy como alternativa
 
  **indice**
 
