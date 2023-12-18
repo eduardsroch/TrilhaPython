@@ -10,4 +10,5 @@ O código faz uma Revisão das atividades relacionada à programação em Python
 | Colocar as melhorias na pasta DataFruta_V1. |Não utilizar módulos ou pacotes prontos para a implementação.  | | |
 |  | comparar as implementações com métodos disponíveis na NumPy. | | |
 
+
 <a href="./P003/">Revisão da 1ª Semana</a>
