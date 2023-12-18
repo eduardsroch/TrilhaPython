@@ -43,13 +43,24 @@ def menu():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            nomes.entrada_de_dados()
+            nome = input("Digite o nome: ")
+            nomes.entrada_de_dados(nome)
         elif opcao == "2":
-            salarios.entrada_de_dados()
+            salario = float(input("Digite o salário: "))
+            salarios.entrada_de_dados(salario)
         elif opcao == "3":
-            datas.entrada_de_dados()
+            while True:
+                try:
+                    data_input = input("Digite a data no formato dd/mm/aaaa: ")
+                    dia, mes, ano = map(int, data_input.split('/'))
+                    data = Data(dia, mes, ano)
+                    datas.entrada_de_dados(data)
+                    break
+                except ValueError:
+                    print("Erro: Insira uma data válida no formato dd/mm/aaaa.")
         elif opcao == "4":
-            idades.entrada_de_dados()
+            idade = int(input("Digite a idade: "))
+            idades.entrada_de_dados(idade)
         elif opcao == "5":
             iterador_zip(nomes, salarios)
         elif opcao == "6":

@@ -213,24 +213,15 @@ class ListaSalarios(AnaliseDados):
 
 
 class ListaIdades(AnaliseDados):
-    def __init__(self):
-        self.__lista = []        
-    
-    def entrada_de_dados(self):
-        try:
-            quantidade = int(input("Quantas idades deseja inserir? "))
-            for _ in range(quantidade):
-                while True:
-                    try:
-                        idade = int(input("Digite a idade: "))
-                        if idade < 0:
-                            raise ValueError("Idade não pode ser negativa.")
-                        self.__lista.append(idade)
-                        break
-                    except ValueError:
-                        print("Erro: Insira uma idade válida.")
-        except ValueError:
-            print("Erro: Insira um número válido para a quantidade.")
+    def __init__(self, idades=[]):
+        self.__lista = []
+        for idade in idades:
+            self.entrada_de_dados(idade)
+
+    def entrada_de_dados(self, idade):
+        if idade < 0:
+            raise ValueError("Idade não pode ser negativa.")
+        self.__lista.append(idade)
 
     def mostra_mediana(self):
         self.__lista.sort()
@@ -255,3 +246,7 @@ class ListaIdades(AnaliseDados):
 
     def __iter__(self):
         return iter(self.__lista)
+
+
+if __name__ == "__main__":
+    menu()
