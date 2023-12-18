@@ -12,7 +12,8 @@
 
  **indice**
 
- - <a href="./DataFruta/DescriçaodasAtividades.md">Descrição do projeto</a>
+ - <a href="./DataFruta/DescriçaodasAtividades.md">Descrição do projeto DataFruta</a>
+  - <a href="./DataFruta_V1/RevisãodasAtividades.md">Revisao do projeto DataFruta_V1</a>
   - <a href="./Relatorios/">Relatorios</a>
 
  **Tecnologias ultilizadas**
