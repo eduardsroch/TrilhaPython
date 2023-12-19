@@ -54,10 +54,9 @@ class Data:
     def __gt__(self, outraData):
         return (self.__ano, self.__mes, self.__dia) > (outraData.__ano, outraData.__mes, outraData.__dia)
 
-
 class AnaliseDados(ABC): 
     @abstractmethod
-    def entrada_de_dados(self):
+    def entrada_de_dados(self, dados):
         pass
 
     @abstractmethod
@@ -80,16 +79,13 @@ class AnaliseDados(ABC):
     def __iter__(self):
         pass
 
-
 class ListaNomes(AnaliseDados):
     def __init__(self):
         self.__lista = []        
 
-    def entrada_de_dados(self):
+    def entrada_de_dados(self, nomes):
         try:
-            quantidade = int(input("Quantos nomes deseja inserir? "))
-            for _ in range(quantidade):
-                nome = input("Digite o nome: ")
+            for nome in nomes:
                 self.__lista.append(nome)
         except ValueError:
             print("Erro: Insira um número válido para a quantidade.")
@@ -118,24 +114,16 @@ class ListaNomes(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-
 class ListaDatas(AnaliseDados):
     def __init__(self):
         self.__lista = []        
     
-    def entrada_de_dados(self):
+    def entrada_de_dados(self, datas):
         try:
-            quantidade = int(input("Quantas datas deseja inserir? "))
-            for _ in range(quantidade):
-                while True:
-                    try:
-                        data_input = input("Digite a data no formato dd/mm/aaaa: ")
-                        dia, mes, ano = map(int, data_input.split('/'))
-                        data = Data(dia, mes, ano)
-                        self.__lista.append(data)
-                        break
-                    except ValueError:
-                        print("Erro: Insira uma data válida no formato dd/mm/aaaa.")
+            for data_input in datas:
+                dia, mes, ano = map(int, data_input.split('/'))
+                data = Data(dia, mes, ano)
+                self.__lista.append(data)
         except ValueError:
             print("Erro: Insira um número válido para a quantidade.")
 
@@ -166,26 +154,18 @@ class ListaDatas(AnaliseDados):
     def __str__(self):
         return ', '.join(str(data) for data in self.__lista)
 
-
 class ListaSalarios(AnaliseDados):
     def __init__(self):
         self.__lista = []        
 
-    def entrada_de_dados(self):
+    def entrada_de_dados(self, salarios):
         try:
-            quantidade = int(input("Quantos salários deseja inserir? "))
-            for _ in range(quantidade):
-                while True:
-                    try:
-                        salario = float(input("Digite o salário: "))
-                        if salario < 0:
-                            raise ValueError("Salário não pode ser negativo.")
-                        self.__lista.append(salario)
-                        break
-                    except ValueError:
-                        print("Erro: Insira um valor de salário válido.")
+            for salario in salarios:
+                if salario < 0:
+                    raise ValueError("Salário não pode ser negativo.")
+                self.__lista.append(salario)
         except ValueError:
-            print("Erro: Insira um número válido para a quantidade.")
+            print("Erro: Insira um valor de salário válido.")
 
     def mostra_mediana(self):
         self.__lista.sort()
@@ -211,26 +191,16 @@ class ListaSalarios(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-
 class ListaIdades(AnaliseDados):
-    def __init__(self):
-        self.__lista = []        
-    
-    def entrada_de_dados(self):
-        try:
-            quantidade = int(input("Quantas idades deseja inserir? "))
-            for _ in range(quantidade):
-                while True:
-                    try:
-                        idade = int(input("Digite a idade: "))
-                        if idade < 0:
-                            raise ValueError("Idade não pode ser negativa.")
-                        self.__lista.append(idade)
-                        break
-                    except ValueError:
-                        print("Erro: Insira uma idade válida.")
-        except ValueError:
-            print("Erro: Insira um número válido para a quantidade.")
+    def __init__(self, idades=[]):
+        self.__lista = []
+        for idade in idades:
+            self.entrada_de_dados(idade)
+
+    def entrada_de_dados(self, idade):
+        if idade < 0:
+            raise ValueError("Idade não pode ser negativa.")
+        self.__lista.append(idade)
 
     def mostra_mediana(self):
         self.__lista.sort()
@@ -255,3 +225,6 @@ class ListaIdades(AnaliseDados):
 
     def __iter__(self):
         return iter(self.__lista)
+
+if __name__ == "__main__":
+    menu()
