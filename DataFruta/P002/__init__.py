@@ -100,10 +100,10 @@ class ListaNomes(AnaliseDados):
         if tamanho % 2 == 0:
             indice1 = tamanho // 2 - 1
             indice2 = tamanho // 2
-            mediana = self.__lista[indice1]  # Retorna o primeiro nome entre os dois no meio
+            mediana = self.__lista[indice1]  
         else:
             indice = tamanho // 2
-            mediana = self.__lista[indice]  # Retorna o nome do meio
+            mediana = self.__lista[indice]  
         return mediana
 
     def mostra_menor(self):
@@ -145,10 +145,10 @@ class ListaDatas(AnaliseDados):
         if tamanho % 2 == 0:
             indice1 = tamanho // 2 - 1
             indice2 = tamanho // 2
-            mediana = self.__lista[indice1]  # Retorna a primeira data entre as duas no meio
+            mediana = self.__lista[indice1]  
         else:
             indice = tamanho // 2
-            mediana = self.__lista[indice]  # Retorna a data do meio
+            mediana = self.__lista[indice]  
         return mediana
 
     def mostra_menor(self):
@@ -193,10 +193,10 @@ class ListaSalarios(AnaliseDados):
         if tamanho % 2 == 0:
             indice1 = tamanho // 2 - 1
             indice2 = tamanho // 2
-            mediana = (self.__lista[indice1] + self.__lista[indice2]) / 2  # Retorna a média entre os dois valores do meio
+            mediana = (self.__lista[indice1] + self.__lista[indice2]) / 2 
         else:
             indice = tamanho // 2
-            mediana = self.__lista[indice]  # Retorna o valor do meio
+            mediana = self.__lista[indice]  
         return mediana
 
     def mostra_menor(self):
@@ -229,7 +229,7 @@ class ListaIdades(AnaliseDados):
         if tamanho % 2 == 0:
             indice1 = tamanho // 2 - 1
             indice2 = tamanho // 2
-            mediana = (self.__lista[indice1] + self.__lista[indice2]) / 2  # Retorna a média entre as duas idades do meio
+            mediana = (self.__lista[indice1] + self.__lista[indice2]) / 2  
         else:
             indice = tamanho // 2
             mediana = self.__lista[indice]  # Retorna a idade do meio

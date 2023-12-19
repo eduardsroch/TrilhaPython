@@ -14,6 +14,11 @@ def modificar_datas_anteriores_a_2019(lista_datas):
             data.dia = 1
     print("Datas modificadas com sucesso!")
 
+def mostrar_desempenho():
+    print("\nCódigo de Desempenho:")
+    with open("teste_tempo.py", "r") as file:
+        print(file.read())    
+
 def iterador_zip(lista_nomes, lista_salarios):
     percorrer_listas_com_zip(lista_nomes, lista_salarios)
 
@@ -38,7 +43,8 @@ def menu():
         print("5. Percorrer as listas de nomes e salários")
         print("6. Calcular o valor da folha com um reajuste de 10%")
         print("7. Modificar o dia das datas anteriores a 2019")
-        print("8. Sair")
+        print("8. Mostrar código de desempenho")
+        print("9. Sair")
 
         opcao = input("Escolha uma opção: ")
 
@@ -68,6 +74,8 @@ def menu():
         elif opcao == "7":
             iterador_filter(datas)
         elif opcao == "8":
+            mostrar_desempenho()
+        elif opcao == "9":
             print("Saindo...")
             break
         else:
