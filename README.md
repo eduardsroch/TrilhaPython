@@ -34,4 +34,4 @@
 | Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| [Eduardo](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)|[LuisRocha](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)  
 | Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) | [Nairan](https://github.com/nairansantos/TrilhaPython)|[Nairan](https://github.com/eduardsroch/TrilhaPython/tree/nairan)  
 | Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| [Arthur](https://github.com/GobiraArthur/TrilhaPython)|[ArthutGobira](https://github.com/eduardsroch/TrilhaPython/tree/ArthutGobira) 
-| Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) |
+| Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) | [Ricardo](https://github.com/RicardTIc/TrilhaPython)|[RicardoTIc](https://github.com/eduardsroch/TrilhaPython/tree/Ricardo)
