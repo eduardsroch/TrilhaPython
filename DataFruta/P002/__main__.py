@@ -14,7 +14,16 @@ def modificar_datas_anteriores_a_2019(lista_datas):
             data.dia = 1
     print("Datas modificadas com sucesso!")
 
-def mostrar_desempenho():
+def iterador_zip(lista_nomes, lista_salarios):
+    percorrer_listas_com_zip(lista_nomes, lista_salarios)
+
+def iterador_map(lista_salarios):
+    calcular_folha_com_reajuste(lista_salarios)
+
+def iterador_filter(lista_datas):
+    modificar_datas_anteriores_a_2019(lista_datas)
+
+def mostrar_codigo_desempenho():
     print("\nCódigo de Desempenho:")
     with open("teste_tempo.py", "r") as file:
         print(file.read())    

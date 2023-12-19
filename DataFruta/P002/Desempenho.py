@@ -1,7 +1,5 @@
 from __init__ import ListaIdades, ListaSalarios, geraListaIdade, geraListaSalarios
-from __main__ import geraListaIdade
 import time
-
 
 idades_obj = ListaIdades(geraListaIdade(5000))
 
