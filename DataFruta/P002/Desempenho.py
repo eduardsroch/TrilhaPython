@@ -1,4 +1,4 @@
-from __init__ import *
+from __init__ import ListaIdades, ListaSalarios, geraListaIdade, geraListaSalarios
 from __main__ import geraListaIdade
 import time
 

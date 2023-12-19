@@ -43,14 +43,14 @@ def menu():
         print("5. Percorrer as listas de nomes e salários")
         print("6. Calcular o valor da folha com um reajuste de 10%")
         print("7. Modificar o dia das datas anteriores a 2019")
-        print("8. Mostrar código de desempenho")
+        print("8. Mostrar desempenho")
         print("9. Sair")
 
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
             nome = input("Digite o nome: ")
-            nomes.entrada_de_dados(nome)
+            nomes.entrada_de_dados([nome])  
         elif opcao == "2":
             salario = float(input("Digite o salário: "))
             salarios.entrada_de_dados(salario)
@@ -74,12 +74,13 @@ def menu():
         elif opcao == "7":
             iterador_filter(datas)
         elif opcao == "8":
-            mostrar_desempenho()
+            mostrar_codigo_desempenho()
         elif opcao == "9":
             print("Saindo...")
             break
         else:
             print("Opção inválida. Tente novamente.")
+
 
 if __name__ == "__main__":
     menu()
