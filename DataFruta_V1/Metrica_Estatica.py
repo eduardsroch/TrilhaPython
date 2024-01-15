@@ -227,7 +227,7 @@ def percorrer_listas_com_zip(lista_nomes, lista_salarios):
 
 def calcular_folha_com_reajuste(lista_salarios):
     for salario in lista_salarios:
-        print(f"Novo salário com reajuste de 10%: R${salario * 1.1:.2f}")
+        print(f"Novo salario com reajuste de 10%: R${salario * 1.1:.2f}")
 
 def modificar_datas_anteriores_a_2019(lista_datas):
     for data in lista_datas:
@@ -245,16 +245,16 @@ def iterador_filter(lista_datas):
     modificar_datas_anteriores_a_2019(lista_datas)
 
 def mostrar_codigo_desempenho():
-    print("\nCódigo de Desempenho:")
-    with open("teste_tempo.py", "r") as file:
+    print("\nCodigo de Desempenho:")
+    with open("Metrica_Estatica.py", "r") as file:
         print(file.read())
 
 def calcular_metricas_estatisticas(nomes, datas, salarios, idades):
-    print("\nMétricas Estatísticas:")
-    print(f"Lista de Nomes: Média = {nomes.calcula_media()}, Desvio Padrão = {nomes.calcula_desvio_padrao()}, Variância = {nomes.calcula_variancia()}")
-    print(f"Lista de Datas: Média = {datas.calcula_media()}, Desvio Padrão = {datas.calcula_desvio_padrao()}, Variância = {datas.calcula_variancia()}")
-    print(f"Lista de Salários: Média = {salarios.calcula_media()}, Desvio Padrão = {salarios.calcula_desvio_padrao()}, Variância = {salarios.calcula_variancia()}")
-    print(f"Lista de Idades: Média = {idades.calcula_media()}, Desvio Padrão = {idades.calcula_desvio_padrao()}, Variância = {idades.calcula_variancia()}")
+    print("\nMetricas Estatisticas:")
+    print(f"Lista de Nomes: Media = {nomes.calcula_media()}, Desvio Padrão = {nomes.calcula_desvio_padrao()}, Variância = {nomes.calcula_variancia()}")
+    print(f"Lista de Datas: Media = {datas.calcula_media()}, Desvio Padrão = {datas.calcula_desvio_padrao()}, Variância = {datas.calcula_variancia()}")
+    print(f"Lista de Salarios: Media = {salarios.calcula_media()}, Desvio Padrao = {salarios.calcula_desvio_padrao()}, Variância = {salarios.calcula_variancia()}")
+    print(f"Lista de Idades: Media = {idades.calcula_media()}, Desvio Padrao = {idades.calcula_desvio_padrao()}, Variancia = {idades.calcula_variancia()}")
 
 def menu():
     nomes = ListaNomes()
@@ -265,23 +265,23 @@ def menu():
     while True:
         print("\n Menu Principal \n")
         print("1. Incluir um nome na lista de nomes")
-        print("2. Incluir um salário na lista de salários")
+        print("2. Incluir um salario na lista de salarios")
         print("3. Incluir uma data na lista de datas")
         print("4. Incluir uma idade na lista de idades")
-        print("5. Percorrer as listas de nomes e salários")
+        print("5. Percorrer as listas de nomes e salarios")
         print("6. Calcular o valor da folha com um reajuste de 10%")
         print("7. Modificar o dia das datas anteriores a 2019")
         print("8. Mostrar desempenho")
-        print("9. Calcular métricas estatísticas")
+        print("9. Calcular metricas estatisticas")
         print("10. Sair")
 
-        opcao = input("Escolha uma opção: ")
+        opcao = input("Escolha uma opcao: ")
 
         if opcao == "1":
             nome = input("Digite o nome: ")
             nomes.entrada_de_dados([nome])
         elif opcao == "2":
-            salario = float(input("Digite o salário: "))
+            salario = float(input("Digite o salario: "))
             salarios.entrada_de_dados([salario])
         elif opcao == "3":
             while True:
@@ -292,7 +292,7 @@ def menu():
                     datas.entrada_de_dados([data])
                     break
                 except ValueError:
-                    print("Erro: Insira uma data válida no formato dd/mm/aaaa.")
+                    print("Erro: Insira uma data valida no formato dd/mm/aaaa.")
         elif opcao == "4":
             idade = int(input("Digite a idade: "))
             idades.entrada_de_dados([idade])
@@ -310,7 +310,7 @@ def menu():
             print("Saindo...")
             break
         else:
-            print("Opção inválida. Tente novamente.")
+            print("Opção invalida. Tente novamente.")
 
 if __name__ == "__main__":
     menu()
