@@ -1,71 +1,75 @@
-from datetime import datetime
-from residente import Residente
-from trilha import Trilha
 from residencia import Residencia
+from trilha import Trilha
+from residente import Residente
 
-def exibir_menu():
-    print("MENU:")
-    print("1. Adicionar Residente à Trilha Python")
-    print("2. Adicionar Residente à Trilha .NET")
-    print("3. Adicionar Residente à Trilha Java")
-    print("4. Voltar ao Menu Anterior")
-    print("5. Sair")
-
-# Fadicionar um residente a uma trilha
 def adicionar_residente(trilha, nome_trilha):
-
+    # solicita dados do residente ao usuário
+    print("Informe os dados do residente:")
+    identificador = input("Identificador: ")
     idade = int(input("Idade: "))
     formacao = int(input("Formação (0-3): "))
-    formacao_geral = bool(int(input("Formação Geral (0/1): ")))
+    formacao_geral = int(input("Formação Geral (0 ou 1): "))
     formacao_especifica = input("Formação Específica: ")
-    porcentagem = int(input("Porcentagem: "))
-    tempo_formado = None
-    if formacao != 2:
-        tempo_formado = int(input("Tempo Formado: "))
-    experiencia = input("Experiência (Sim/Não): ")
+    porcentagem = float(input("Porcentagem : ")) if formacao == 3 else None
+    tempo_formado = float(input("Tempo de Formado : ")) if formacao != 2 else None
+    experiencia = input("Possui experiência (S/N): ").upper()
 
-    # identificador do residente
-    ano_nascimento = datetime.now().year - idade
-    tipo_trilha = nome_trilha[:6]
-    identificador = f"{tipo_trilha}{str(ano_nascimento)[-3:]}"
-
-    # objeto Residente com as informações fornecidas
+    # cria um objeto Residente com os dados fornecidos
     residente = Residente(identificador, idade, formacao, formacao_geral, formacao_especifica, porcentagem, tempo_formado, experiencia)
-    
-    # adicionando o residente à trilha
-    trilha.adiciona_residente(residente)
-    print(f"Residente adicionado à Trilha {nome_trilha} com identificador: {identificador}")
 
+    # adiciona o residente à trilha especificada
+    trilha.adiciona_residente(residente)
+    print("Residente adicionado com sucesso!")
 
 def main():
-
+    # cria um objeto Residencia
     residencia = Residencia()
-    residencia.carregar_dados()  # Carregar dados ao iniciar o programa
-    trilha_atual = None
 
     while True:
-        exibir_menu()
+        
+        print("\nMenu Principal:")
+        print("1. Adicionar Trilha")
+        print("2. Adicionar Residente")
+        print("3. Mostrar DataFrame da Trilha")
+        print("4. Salvar Dados")
+        print("5. Carregar Dados")
+        print("0. Sair")
+
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            nome_trilha = "Python"
+            # adiciona uma nova trilha à residência
+            nome_trilha = input("Informe o nome da trilha: ")
             residencia.adiciona_trilha(nome_trilha)
-            trilha_atual = residencia.get_trilhas()[nome_trilha]
-            adicionar_residente(trilha_atual, nome_trilha)
+            print(f"Trilha '{nome_trilha}' adicionada com sucesso!")
         elif opcao == "2":
-            nome_trilha = ".NET"
-            residencia.adiciona_trilha(nome_trilha)
-            trilha_atual = residencia.get_trilhas()[nome_trilha]
-            adicionar_residente(trilha_atual, nome_trilha)
+            # adiciona um residente a uma trilha existente
+            nome_trilha = input("Informe o nome da trilha para adicionar o residente: ")
+            trilha_atual = residencia.get_trilhas().get(nome_trilha)
+            if trilha_atual:
+                adicionar_residente(trilha_atual, nome_trilha)
+            else:
+                print(f"Trilha '{nome_trilha}' não encontrada.")
         elif opcao == "3":
-            nome_trilha = "Java"
-            residencia.adiciona_trilha(nome_trilha)
-            trilha_atual = residencia.get_trilhas()[nome_trilha]
-            adicionar_residente(trilha_atual, nome_trilha)
+            # mostra o DataFrame de uma trilha específica
+            nome_trilha = input("Informe o nome da trilha para mostrar o DataFrame: ")
+            trilha_atual = residencia.get_trilhas().get(nome_trilha)
+            if trilha_atual:
+                trilha_atual.mostrar_dataframe()
+            else:
+                print(f"Trilha '{nome_trilha}' não encontrada.")
         elif opcao == "4":
-            trilha_atual = None
+            # salva os dados da residência
+            residencia.salvar_dados()
+            print("Dados salvos com sucesso!")
         elif opcao == "5":
-            residencia.salvar_dados()  # salvar dados ao encerrar o programa
+            # carrega os dados da residência
+            residencia.carregar_dados()
+            print("Dados carregados com sucesso!")
+        elif opcao == "0":
+            # sai do programa, salvando os dados antes
+            residencia.salvar_dados()
+            print("Saindo... Até mais!")
             break
         else:
             print("Opção inválida. Tente novamente.")
