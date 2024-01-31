@@ -1,4 +1,6 @@
 from abc import ABC, abstractmethod
+import random
+
 
 class Data:
     def __init__(self, dia=1, mes=1, ano=2000):
@@ -155,8 +157,9 @@ class ListaDatas(AnaliseDados):
         return ', '.join(str(data) for data in self.__lista)
 
 class ListaSalarios(AnaliseDados):
-    def __init__(self):
-        self.__lista = []        
+    def __init__(self, lista=[]):
+        self.lista = lista        
+
 
     def entrada_de_dados(self, salarios):
         try:
@@ -168,22 +171,22 @@ class ListaSalarios(AnaliseDados):
             print("Erro: Insira um valor de salário válido.")
 
     def mostra_mediana(self):
-        self.__lista.sort()
-        tamanho = len(self.__lista)
+        self.lista.sort()
+        tamanho = len(self.lista)
         if tamanho % 2 == 0:
             indice1 = tamanho // 2 - 1
             indice2 = tamanho // 2
-            mediana = (self.__lista[indice1] + self.__lista[indice2]) / 2  # Retorna a média entre os dois valores do meio
+            mediana = (self.lista[indice1] + self.lista[indice2]) / 2  # Retorna a média entre os dois valores do meio
         else:
             indice = tamanho // 2
-            mediana = self.__lista[indice]  # Retorna o valor do meio
+            mediana = self.lista[indice]  # Retorna o valor do meio
         return mediana
 
     def mostra_menor(self):
-        return min(self.__lista)
+        return min(self.lista)
 
     def mostra_maior(self):
-        return max(self.__lista)
+        return max(self.lista)
 
     def listar_em_ordem(self):
         return sorted(self.__lista)
@@ -192,33 +195,31 @@ class ListaSalarios(AnaliseDados):
         return iter(self.__lista)
 
 class ListaIdades(AnaliseDados):
-    def __init__(self, idades=[]):
-        self.__lista = []
-        for idade in idades:
-            self.entrada_de_dados(idade)
 
+    def __init__(self, lista=[]):
+        self.lista = lista
     def entrada_de_dados(self, idade):
         if idade < 0:
             raise ValueError("Idade não pode ser negativa.")
-        self.__lista.append(idade)
+        self.lista.append(idade)
 
     def mostra_mediana(self):
-        self.__lista.sort()
-        tamanho = len(self.__lista)
+        self.lista.sort()
+        tamanho = len(self.lista)
         if tamanho % 2 == 0:
             indice1 = tamanho // 2 - 1
             indice2 = tamanho // 2
-            mediana = (self.__lista[indice1] + self.__lista[indice2]) / 2  # Retorna a média entre as duas idades do meio
+            mediana = (self.lista[indice1] + self.lista[indice2]) / 2  # Retorna a média entre as duas idades do meio
         else:
             indice = tamanho // 2
-            mediana = self.__lista[indice]  # Retorna a idade do meio
+            mediana = self.lista[indice]  # Retorna a idade do meio
         return mediana
 
     def mostra_menor(self):
-        return min(self.__lista)
+        return min(self.lista)
 
     def mostra_maior(self):
-        return max(self.__lista)
+        return max(self.lista)
 
     def listar_em_ordem(self):
         return sorted(self.__lista)
@@ -226,5 +227,3 @@ class ListaIdades(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-if __name__ == "__main__":
-    menu()
